@@ -38,6 +38,12 @@ It supports user registration, authentication, profile management, password upda
 # Install dependencies
 npm install
 
+# env
+Create a `.env` file in the `backend` root folder and configure the following:
+JWT_SECRET 
+JWT_EXPIRES_IN=1h
+DB_URL
+
 # Start the server
 npm start
 
