@@ -1,0 +1,116 @@
+/* Page background */
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Card */
+.auth-card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 420px;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.auth-card h2 {
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+.auth-card input,
+.auth-card select {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.auth-card input:focus,
+.auth-card select:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
+}
+
+/* Button */
+.auth-card button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #667eea;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.auth-card button:hover:not(:disabled) {
+  background: #5a67d8;
+}
+
+.auth-card button:active {
+  transform: scale(0.98);
+}
+
+.auth-card button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Error */
+.error-box {
+  background: #ffe5e5;
+  color: #c53030;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 13px;
+  margin-bottom: 14px;
+}
+
+/* Footer */
+.footer-text {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-text a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-text a:hover {
+  text-decoration: underline;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

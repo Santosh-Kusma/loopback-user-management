@@ -1,0 +1,106 @@
+.update-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.update-card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 520px;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.4s ease;
+}
+
+.update-card h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form controls */
+.update-card input,
+.update-card select {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.update-card input:focus,
+.update-card select:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
+}
+
+/* Action buttons */
+.update-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.update-actions button {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.update-actions button.primary {
+  background: #667eea;
+  color: white;
+}
+
+.update-actions button.primary:hover {
+  background: #5a67d8;
+}
+
+.update-actions button.secondary {
+  background: #edf2f7;
+  color: #333;
+}
+
+.update-actions button.secondary:hover {
+  background: #e2e8f0;
+}
+
+.update-actions button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Error box (same language as auth pages) */
+.update-error {
+  background: #ffe5e5;
+  color: #c53030;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 13px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
